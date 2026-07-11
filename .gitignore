@@ -38,6 +38,13 @@ ScaffoldingReadMe.txt
 
 # dotenv environment variables file
 .env
+backend/GastosResidenciais.Api/.env
+frontend/.env
+
+# SQLite database files
+*.db
+*.db-shm
+*.db-wal
 
 # Others
 ~$*
