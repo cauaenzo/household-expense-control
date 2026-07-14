@@ -1,0 +1,81 @@
+@baseUrl = http://localhost:5112/api
+
+### Criar pessoa adulta
+POST {{baseUrl}}/pessoas
+Content-Type: application/json
+
+{
+  "nome": "Carlos Silva",
+  "idade": 35
+}
+
+### Criar pessoa menor de idade
+POST {{baseUrl}}/pessoas
+Content-Type: application/json
+
+{
+  "nome": "Lucas Oliveira",
+  "idade": 15
+}
+
+### Listar pessoas
+GET {{baseUrl}}/pessoas
+
+### Criar despesa para adulto (pessoaId = 1)
+POST {{baseUrl}}/transacoes
+Content-Type: application/json
+
+{
+  "descricao": "Supermercado",
+  "valor": 350.00,
+  "tipo": "Despesa",
+  "pessoaId": 1
+}
+
+### Criar receita para adulto (pessoaId = 1)
+POST {{baseUrl}}/transacoes
+Content-Type: application/json
+
+{
+  "descricao": "Salario",
+  "valor": 4500.00,
+  "tipo": "Receita",
+  "pessoaId": 1
+}
+
+### Tentar criar receita para menor (pessoaId = 2) - deve retornar 400
+POST {{baseUrl}}/transacoes
+Content-Type: application/json
+
+{
+  "descricao": "Mesada",
+  "valor": 200.00,
+  "tipo": "Receita",
+  "pessoaId": 2
+}
+
+### Criar despesa para menor (pessoaId = 2) - deve funcionar
+POST {{baseUrl}}/transacoes
+Content-Type: application/json
+
+{
+  "descricao": "Lanche",
+  "valor": 15.50,
+  "tipo": "Despesa",
+  "pessoaId": 2
+}
+
+### Listar todas as transacoes
+GET {{baseUrl}}/transacoes
+
+### Listar transacoes de uma pessoa especifica
+GET {{baseUrl}}/transacoes?pessoaId=1
+
+### Relatorio de totais
+GET {{baseUrl}}/relatorios/totais
+
+### Tentar buscar pessoa inexistente - deve retornar 404
+DELETE {{baseUrl}}/pessoas/9999
+
+### Excluir pessoa (remove transacoes em cascata)
+DELETE {{baseUrl}}/pessoas/2
