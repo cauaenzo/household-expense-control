@@ -1,0 +1,99 @@
+.titulo {
+  font-size: 20px;
+  margin-bottom: 24px;
+}
+
+.secao {
+  background: #fff;
+  border: 1px solid #e5e5e5;
+  border-radius: 6px;
+  padding: 24px;
+  margin-bottom: 24px;
+}
+
+.secaoTitulo {
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: #555;
+  margin-bottom: 16px;
+}
+
+.botaoAtualizar {
+  background: none;
+  border: 1px solid #d1d5db;
+  border-radius: 4px;
+  padding: 5px 14px;
+  font-size: 13px;
+  margin-bottom: 16px;
+  color: #444;
+}
+
+.botaoAtualizar:hover {
+  background: #f5f5f5;
+}
+
+.receita {
+  color: #16a34a;
+}
+
+.despesa {
+  color: #dc2626;
+}
+
+.saldoPositivo {
+  color: #16a34a;
+  font-weight: 600;
+}
+
+.saldoNegativo {
+  color: #dc2626;
+  font-weight: 600;
+}
+
+.totalGeral {
+  background: #f8faff;
+  border: 1px solid #bfdbfe;
+  border-radius: 6px;
+  padding: 20px 24px;
+}
+
+.totalGeralTitulo {
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: #3b82f6;
+  margin-bottom: 14px;
+}
+
+.totalGeralGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.totalItem {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.totalLabel {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: #888;
+}
+
+.totalValor {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.semDados {
+  color: #888;
+  font-size: 14px;
+  padding: 8px 0;
+}

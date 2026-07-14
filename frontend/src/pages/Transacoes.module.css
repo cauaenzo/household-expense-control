@@ -1,0 +1,112 @@
+.titulo {
+  font-size: 20px;
+  margin-bottom: 24px;
+}
+
+.secao {
+  background: #fff;
+  border: 1px solid #e5e5e5;
+  border-radius: 6px;
+  padding: 24px;
+  margin-bottom: 24px;
+}
+
+.secaoTitulo {
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: #555;
+  margin-bottom: 16px;
+}
+
+.form {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  align-items: flex-end;
+}
+
+.campo {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.campo label {
+  font-size: 13px;
+  font-weight: 500;
+  color: #444;
+}
+
+.campo input,
+.campo select {
+  border: 1px solid #d1d5db;
+  border-radius: 4px;
+  padding: 7px 10px;
+  width: 200px;
+  outline: none;
+  background: #fff;
+  transition: border-color 0.15s;
+}
+
+.campo input:focus,
+.campo select:focus {
+  border-color: #3b82f6;
+}
+
+.botaoSalvar {
+  background: #3b82f6;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 7px 18px;
+  font-size: 14px;
+  height: 34px;
+}
+
+.botaoSalvar:hover {
+  background: #2563eb;
+}
+
+.botaoSalvar:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.filtroPessoa {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 16px;
+  font-size: 14px;
+}
+
+.filtroPessoa label {
+  font-weight: 500;
+}
+
+.filtroPessoa select {
+  border: 1px solid #d1d5db;
+  border-radius: 4px;
+  padding: 5px 8px;
+  font-size: 14px;
+  background: #fff;
+  outline: none;
+}
+
+.tipoReceita {
+  color: #16a34a;
+  font-weight: 500;
+}
+
+.tipoDespesa {
+  color: #dc2626;
+  font-weight: 500;
+}
+
+.semDados {
+  color: #888;
+  font-size: 14px;
+  padding: 8px 0;
+}
